@@ -39,7 +39,7 @@
 #include <stdlib.h>
 #include <cstddef>
 #include <string>
-#include <string.h>
+//#include <string.h>
 #if defined(__osf__)
 // Tru64 lacks stdint.h, but has inttypes.h which defines a superset of
 // what stdint.h would define.
