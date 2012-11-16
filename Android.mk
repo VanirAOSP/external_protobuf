@@ -196,13 +196,13 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_CFLAGS := -DGOOGLE_PROTOBUF_NO_RTTI
 
-ifeq ($(TARGET_ARCH),arm)
+#ifeq ($(TARGET_ARCH),arm)
 # These are the minimum versions and don't need to be update.
-LOCAL_SDK_VERSION := 8
-LOCAL_NDK_STL_VARIANT := stlport_static
-else
+#LOCAL_SDK_VERSION := 8
+#LOCAL_NDK_STL_VARIANT := stlport_static
+#else
 include external/stlport/libstlport.mk
-endif
+#endif
 
 include $(BUILD_STATIC_LIBRARY)
 
@@ -260,13 +260,13 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_CFLAGS := -DGOOGLE_PROTOBUF_NO_RTTI
 
-ifeq ($(TARGET_ARCH),arm)
+#ifeq ($(TARGET_ARCH),arm)
 # These are the minimum versions and don't need to be update.
-LOCAL_SDK_VERSION := 8
-LOCAL_NDK_STL_VARIANT := stlport_static
-else
+#LOCAL_SDK_VERSION := 8
+#LOCAL_NDK_STL_VARIANT := stlport_static
+#else
 include external/stlport/libstlport.mk
-endif
+#endif
 
 include $(BUILD_STATIC_LIBRARY)
 
